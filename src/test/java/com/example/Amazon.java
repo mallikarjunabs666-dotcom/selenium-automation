@@ -50,3 +50,6 @@ public class Amazon {
 
     }
 }
+
+
+//*[normalize-space()='High School'] - recommnded

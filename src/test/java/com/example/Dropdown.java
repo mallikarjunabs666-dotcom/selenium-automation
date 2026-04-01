@@ -27,7 +27,7 @@ public class Dropdown {
 
         driver.findElement(By.xpath("//span[contains(text(), 'Create new account')]")).click();
 
-       WebDriverWait wait = new WebDriverWait(driver, 10);
+       WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
        WebElement genderdropdown = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(), 'Select your gender')]")));
 
