@@ -1,4 +1,4 @@
-package restassured.cookiesAndheaders;
+package restassured.cookiesandheaders;
 
 import io.restassured.response.Response;
 import org.testng.annotations.Test;

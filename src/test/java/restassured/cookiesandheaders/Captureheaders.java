@@ -1,4 +1,4 @@
-package restassured.cookiesAndheaders;
+package restassured.cookiesandheaders;
 
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class CaptureHeadersInfo {
+public class Captureheaders {
 
 //    Validating headers info in then part
 
@@ -29,7 +29,7 @@ public class CaptureHeadersInfo {
 
     }
 
-//    Capturing headers info of all the headers
+//    Capturing headers info of single header
 
     @Test
     void getSingleCookieInfo() {
