@@ -1,6 +1,5 @@
 package restassured.post;
 
-import groovy.json.JsonToken;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 import org.testng.annotations.Test;
