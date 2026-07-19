@@ -10,8 +10,7 @@ import static io.restassured.RestAssured.given;
 public class APIinterview {
 
     @Test
-    void createBooking()
-    {
+    void createBooking() {
         JSONObject data = new JSONObject();
         data.put("firstname", "Jim");
         data.put("lastname", "Brown");
@@ -26,7 +25,7 @@ public class APIinterview {
 
         data.put("additionalneeds", "Breakfast");
 
-       Response rs = given()
+        Response rs = given()
                 .contentType("application/json")
                 .body(data.toString())
 
@@ -35,7 +34,10 @@ public class APIinterview {
 
         Assert.assertEquals(rs.getStatusCode(), 200);
 
+        JSONObject response = new JSONObject(rs.asString());
 
+        String additionaldata = response.getJSONObject("booking").getString("additionalneeds");
+        Assert.assertEquals(additionaldata, "Breakfast");
 
 
     }
